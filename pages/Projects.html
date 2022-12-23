@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Projects</title>
+
+		<link rel="stylesheet" href="../scss/main.css" />
+	</head>
+	<body>
+		<div class="bg-primary bg-opacity-10 min-vh-100">
+			<div class="container">
+				<nav class="navbar bg-transparent navbar-expand-xxl">
+					<div class="container-fluid">
+						<a
+							class="navbar-brand text-primary text-uppercase fs-1 fw-bold"
+							href="#"
+							>NEXTGEN</a
+						>
+						<button
+							class="navbar-toggler d-md-none btn-link text-primary shadow-none border-0 collapsed"
+							type="button"
+							data-toggle="collapse"
+							data-target="#sidebar"
+							aria-controls="sidebar"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<ion-icon
+								name="menu-outline"
+								size="large"
+							></ion-icon>
+						</button>
+
+						<div
+							class="col-12 col-md-5 col-lg-8 d-flex align-items-center justify-content-end mt-3 mt-md-0"
+						>
+							<div class="dropdown">
+								<button
+									class="btn btn-link"
+									type="button"
+									id="dropdownMenuButton"
+									data-toggle="dropdown"
+									aria-expanded="false"
+								>
+									<div
+										class="media align-items-center d-flex flex-row"
+									>
+										<img
+											class="rounded-circle blur-up lazyloaded"
+											src="https://randomuser.me/api/portraits/thumb/men/75.jpg"
+											alt="header-user"
+										/>
+									</div>
+								</button>
+								<ul
+									class="dropdown-menu"
+									aria-labelledby="dropdownMenuButton"
+								>
+									<li>
+										<a class="dropdown-item" href="#"
+											>Settings</a
+										>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#"
+											>Messages</a
+										>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#"
+											>Sign out</a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</nav>
+
+				<div class="container-fluid">
+					<div class="row">
+						<nav
+							id="sidebar"
+							class="col-md-3 col-lg-2 d-md-block sidebar collapse"
+						>
+							<div class="position-sticky pt-md-4">
+								<ul class="nav flex-column">
+									<li class="nav-item">
+										<a
+											class="nav-link d-flex align-items-center"
+											aria-current="page"
+											href="./Dashboard.html"
+										>
+											<ion-icon
+												name="pie-chart"
+												class="fs-4"
+											></ion-icon>
+											<span style="margin-left: 10px"
+												>Dashboard</span
+											>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link d-flex align-items-center"
+											href="./Investments.html"
+										>
+											<ion-icon
+												name="color-palette"
+												class="fs-4"
+											></ion-icon>
+											<span style="margin-left: 10px"
+												>Investments</span
+											>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link active d-flex align-items-center"
+											href="./Projects.html"
+										>
+											<ion-icon
+												name="easel"
+												class="fs-4"
+											></ion-icon>
+											<span style="margin-left: 10px"
+												>Projects</span
+											>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link d-flex align-items-center"
+											href="./Payment.html"
+										>
+											<ion-icon
+												name="wallet"
+												class="fs-4"
+											></ion-icon>
+											<span style="margin-left: 10px"
+												>Funds</span
+											>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link d-flex align-items-center"
+											href="#"
+										>
+											<ion-icon
+												name="stats-chart"
+												class="fs-4"
+											></ion-icon>
+											<span style="margin-left: 10px"
+												>All Activities</span
+											>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link d-flex align-items-center"
+											href="#"
+										>
+											<ion-icon
+												name="clipboard"
+												class="fs-4"
+											></ion-icon>
+											<span style="margin-left: 10px"
+												>Reports</span
+											>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+						<main
+							class="col-md-9 ml-sm-auto col-lg-10 px-md-4 py-4"
+						>
+							<div class="card shadow border-0">
+								<div class="card-body">
+									<div class="h5">Projects</div>
+									<div class="text-muted">
+										List of projects
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 my-4 mb-lg-0">
+									<div class="card shadow border-0">
+										<div class="card-body">
+											<div class="table-responsive">
+												<table
+													class="table table-striped"
+												>
+													<thead>
+														<tr>
+															<th scope="col">
+																Name
+															</th>
+															<th scope="col">
+																Target
+															</th>
+															<th scope="col">
+																Amount Raised
+															</th>
+															<th scope="col">
+																Date Invested
+															</th>
+															<th scope="col">
+																Return %
+															</th>
+															<th scope="col">
+																Amount Invested
+															</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>GLO</td>
+															<td>GH₵700,000</td>
+															<td>
+																GH₵1,000,000
+															</td>
+															<td>12/02/2021</td>
+															<td>
+																<span
+																	class="badge text-bg-success bg-opacity-25 rounded-pill text-success px-4"
+																	>3.2
+																	<ion-icon
+																		name="checkmark-outline"
+																	></ion-icon
+																></span>
+															</td>
+															<td>GH₵55,000</td>
+														</tr>
+														<tr>
+															<td>GLO</td>
+															<td>GH₵700,000</td>
+															<td>
+																GH₵1,000,000
+															</td>
+															<td>12/02/2021</td>
+															<td>
+																<span
+																	class="badge text-bg-success bg-opacity-25 rounded-pill text-success px-4"
+																	>3.2
+																	<ion-icon
+																		name="checkmark-outline"
+																	></ion-icon
+																></span>
+															</td>
+															<td>GH₵55,000</td>
+														</tr>
+														<tr>
+															<td>GLO</td>
+															<td>GH₵700,000</td>
+															<td>
+																GH₵1,000,000
+															</td>
+															<td>12/02/2021</td>
+															<td>
+																<span
+																	class="badge text-bg-success bg-opacity-25 rounded-pill text-success px-4"
+																	>3.2
+																	<ion-icon
+																		name="checkmark-outline"
+																	></ion-icon
+																></span>
+															</td>
+															<td>GH₵55,000</td>
+														</tr>
+														<tr>
+															<td>GLO</td>
+															<td>GH₵700,000</td>
+															<td>
+																GH₵1,000,000
+															</td>
+															<td>12/02/2021</td>
+															<td>
+																<span
+																	class="badge text-bg-success bg-opacity-25 rounded-pill text-success px-4"
+																	>3.2
+																	<ion-icon
+																		name="checkmark-outline"
+																	></ion-icon
+																></span>
+															</td>
+															<td>GH₵55,000</td>
+														</tr>
+														<tr>
+															<td>GLO</td>
+															<td>GH₵700,000</td>
+															<td>
+																GH₵1,000,000
+															</td>
+															<td>12/02/2021</td>
+															<td>
+																<span
+																	class="badge text-bg-success bg-opacity-25 rounded-pill text-success px-4"
+																	>3.2
+																	<ion-icon
+																		name="checkmark-outline"
+																	></ion-icon
+																></span>
+															</td>
+															<td>GH₵55,000</td>
+														</tr>
+														<tr>
+															<td>GLO</td>
+															<td>GH₵700,000</td>
+															<td>
+																GH₵1,000,000
+															</td>
+															<td>12/02/2021</td>
+															<td>
+																<span
+																	class="badge text-bg-success bg-opacity-25 rounded-pill text-success px-4"
+																	>3.2
+																	<ion-icon
+																		name="checkmark-outline"
+																	></ion-icon
+																></span>
+															</td>
+															<td>GH₵55,000</td>
+														</tr>
+														<tr>
+															<td>GLO</td>
+															<td>GH₵700,000</td>
+															<td>
+																GH₵1,000,000
+															</td>
+															<td>12/02/2021</td>
+															<td>
+																<span
+																	class="badge text-bg-success bg-opacity-25 rounded-pill text-success px-4"
+																	>3.2
+																	<ion-icon
+																		name="checkmark-outline"
+																	></ion-icon
+																></span>
+															</td>
+															<td>GH₵55,000</td>
+														</tr>
+														<tr>
+															<td>GLO</td>
+															<td>GH₵700,000</td>
+															<td>
+																GH₵1,000,000
+															</td>
+															<td>12/02/2021</td>
+															<td>
+																<span
+																	class="badge text-bg-success bg-opacity-25 rounded-pill text-success px-4"
+																	>3.2
+																	<ion-icon
+																		name="checkmark-outline"
+																	></ion-icon
+																></span>
+															</td>
+															<td>GH₵55,000</td>
+														</tr>
+														<tr>
+															<td>GLO</td>
+															<td>GH₵700,000</td>
+															<td>
+																GH₵1,000,000
+															</td>
+															<td>12/02/2021</td>
+															<td>
+																<span
+																	class="badge text-bg-success bg-opacity-25 rounded-pill text-success px-4"
+																	>3.2
+																	<ion-icon
+																		name="checkmark-outline"
+																	></ion-icon
+																></span>
+															</td>
+															<td>GH₵55,000</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</main>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+			integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+			crossorigin="anonymous"
+		></script>
+
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+
+		<script src="../js/main.js"></script>
+	</body>
+</html>
