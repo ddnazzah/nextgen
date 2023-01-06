@@ -1,177 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Sign Up</title>
-
-		<link rel="stylesheet" href="../scss/main.css" />
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="../assets/img/apple-icon.png"
+		/>
+		<link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+		<title>SignUp - NextGen</title>
+		<!--     Fonts and icons     -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
+			rel="stylesheet"
+		/>
+		<!-- Nucleo Icons -->
+		<link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+		<link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+		<!-- Font Awesome Icons -->
+		<script
+			src="https://kit.fontawesome.com/42d5adcbca.js"
+			crossorigin="anonymous"
+		></script>
+		<link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+		<!-- CSS Files -->
+		<link
+			id="pagestyle"
+			href="../assets/css/soft-ui-dashboard.min.css?v=1.0.7"
+			rel="stylesheet"
+		/>
 	</head>
-	<body>
-		<div class="bg-primary bg-opacity-10">
-			<div class="container">
-				<div class="top-circles-container">
-					<div
-						class="circle-one rounded-circle border border-primary border-4"
-					></div>
-					<div
-						class="circle-two rounded-circle border border-primary border-4"
-					></div>
-					<div
-						class="circle-three rounded-circle border border-white border-4"
-					></div>
-				</div>
 
-				<div class="bottom-circles-container">
-					<div
-						class="circle-one rounded-circle border border-white border-4"
-					></div>
-					<div
-						class="circle-two rounded-circle border border-primary border-4"
-					></div>
-					<div
-						class="circle-three rounded-circle border border-white border-4"
-					></div>
+	<body class="">
+		<div class="container position-sticky z-index-sticky top-0">
+			<div class="row">
+				<div class="col-12">
+					<!-- Navbar -->
+					<nav
+						class="navbar navbar-expand-lg blur blur-rounded top-0 z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4"
+					>
+						<div class="container-fluid pe-0">
+							<a
+								class="navbar-brand font-weight-bolder ms-lg-0 ms-3"
+								href="../pages/dashboard.html"
+							>
+								NEXTGEN
+							</a>
+							<button
+								class="navbar-toggler shadow-none ms-2"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#navigation"
+								aria-controls="navigation"
+								aria-expanded="false"
+								aria-label="Toggle navigation"
+							>
+								<span class="navbar-toggler-icon mt-2">
+									<span
+										class="navbar-toggler-bar bar1"
+									></span>
+									<span
+										class="navbar-toggler-bar bar2"
+									></span>
+									<span
+										class="navbar-toggler-bar bar3"
+									></span>
+								</span>
+							</button>
+						</div>
+					</nav>
+					<!-- End Navbar -->
 				</div>
-
-				<div class="row min-vh-100 d-flex align-items-center">
-					<div class="col-lg-2"></div>
-					<div class="col-lg-8">
-						<div class="card border-0 my-3">
-							<div class="row g-0">
-								<div
-									class="col-md-5 text-bg-primary bg-opacity-100 text-center d-flex align-content-between flex-wrap rounded-start"
-								>
+			</div>
+		</div>
+		<main class="main-content mt-0">
+			<section>
+				<div class="page-header min-vh-75">
+					<div class="container">
+						<div class="row">
+							<div
+								class="col-xl-4 col-lg-5 col-md-6 d-flex flex-column mx-auto"
+							>
+								<div class="card card-plain mt-8">
 									<div
-										class="bg-white bg-opacity-10 y-5 px-3 curved-bg"
-									></div>
-									<div class="py-5 px-3">
-										<h3>NEXTGEN</h3>
-										<p class="mt-5 lh-lg">
-											NEXTGEN seeks to bridge the gap
-											between investments and project
-											financing by providing knowledge in
-											investment management and managing
-											investments through their innovative
-											web application
+										class="card-header pb-0 text-left bg-transparent"
+									>
+										<h3
+											class="font-weight-bolder text-info text-gradient"
+										>
+											Welcome!
+										</h3>
+										<p class="mb-0">
+											Use these awesome forms to login or
+											create new account in your project
+											for free.
 										</p>
 									</div>
-									<div class="mx-auto py-5 px-3">
-										<p>Have an account?</p>
-
-										<button
-											type="button"
-											class="btn btn-outline-light px-5 rounded-0"
-										>
-											Login
-										</button>
-									</div>
-								</div>
-								<div
-									class="col-md-7 d-flex align-content-between flex-wrap"
-								>
-									<div class="card-body p-5">
-										<h3 class="mb-4">Sign Up</h3>
-										<form action="">
+									<div class="card-body">
+										<form role="form">
+											<label>Full name</label>
 											<div class="mb-3">
-												<label
-													for="fullName"
-													class="form-label"
-													>Full name</label
-												>
 												<input
 													type="text"
 													class="form-control"
-													id="fullName"
+													placeholder="Full name"
+													aria-label="full-name"
 												/>
 											</div>
+											<label>Phone number</label>
 											<div class="mb-3">
-												<label
-													for="phoneNumber"
-													class="form-label"
-													>Phone Number</label
-												>
 												<input
 													type="text"
 													class="form-control"
-													id="phoneNumber"
+													placeholder="Phone number"
+													aria-label="phone-number"
 												/>
 											</div>
+											<label>Email</label>
 											<div class="mb-3">
-												<label
-													for="emailAddress"
-													class="form-label"
-													>Email Address</label
-												>
 												<input
 													type="email"
 													class="form-control"
-													id="emailAddress"
+													placeholder="Email"
+													aria-label="email"
 												/>
 											</div>
-											<div class="row mb-3">
-												<div class="col-md-6">
-													<label
-														for="password"
-														class="form-label"
-														>Password</label
-													>
-													<input
-														type="password"
-														class="form-control"
-														id="password"
-													/>
-												</div>
-												<div class="col-md-6">
-													<label
-														for="confirmPassword"
-														class="form-label"
-														>Confirm Password</label
-													>
-													<input
-														type="password"
-														class="form-control"
-														id="confirmPassword"
-													/>
-												</div>
+											<label>Password</label>
+											<div class="mb-3">
+												<input
+													type="password"
+													class="form-control"
+													placeholder="Password"
+													aria-label="password"
+												/>
 											</div>
-											<div class="form-check mb-5">
+											<label>Confirm Password</label>
+											<div class="mb-3">
+												<input
+													type="password"
+													class="form-control"
+													placeholder="Confirm password"
+													aria-label="confirm-password"
+												/>
+											</div>
+											<div
+												class="form-check form-check-info text-left"
+											>
 												<input
 													class="form-check-input"
 													type="checkbox"
 													value=""
 													id="flexCheckDefault"
+													checked
 												/>
 												<label
 													class="form-check-label"
 													for="flexCheckDefault"
 												>
-													I accept the
-													<a href="http://">terms</a>
-													and
-													<a href="http://"
-														>privacy policies</a
+													I agree the
+													<a
+														href="javascript:;"
+														class="text-dark font-weight-bolder"
+														>Terms and Conditions</a
 													>
 												</label>
 											</div>
-											<div class="d-grid">
+											<div class="text-center">
 												<button
-													class="btn btn-primary"
-													type="submit"
+													type="button"
+													class="btn bg-gradient-info w-100 mt-4 mb-0"
 												>
-													Sign up
+													Sign in
 												</button>
 											</div>
 										</form>
 									</div>
+									<div
+										class="card-footer text-center pt-0 px-lg-2 px-1"
+									>
+										<p class="mb-4 text-sm mx-auto">
+											Have an account?
+											<a
+												href="javascript:;"
+												class="text-info text-gradient font-weight-bold"
+												>Login</a
+											>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div
+									class="oblique position-absolute top-0 h-100 d-md-block d-none me-n8"
+								>
+									<div
+										class="oblique-image bg-cover position-absolute fixed-top ms-auto h-100 z-index-0 ms-n6"
+										style="
+											background-image: url('../assets/img/ivancik.jpg');
+										"
+									></div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-2"></div>
+				</div>
+			</section>
+		</main>
+		<!-- -------- START FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
+		<footer class="footer py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 mb-4 mx-auto text-center">
+						<a
+							href="javascript:;"
+							target="_blank"
+							class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2"
+						>
+							Company
+						</a>
+						<a
+							href="javascript:;"
+							target="_blank"
+							class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2"
+						>
+							About Us
+						</a>
+						<a
+							href="javascript:;"
+							target="_blank"
+							class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2"
+						>
+							Team
+						</a>
+						<a
+							href="javascript:;"
+							target="_blank"
+							class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2"
+						>
+							Products
+						</a>
+						<a
+							href="javascript:;"
+							target="_blank"
+							class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2"
+						>
+							Blog
+						</a>
+						<a
+							href="javascript:;"
+							target="_blank"
+							class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2"
+						>
+							Pricing
+						</a>
+					</div>
+					<div class="col-lg-8 mx-auto text-center mb-4 mt-2">
+						<a
+							href="javascript:;"
+							target="_blank"
+							class="text-secondary me-xl-4 me-4"
+						>
+							<span class="text-lg fab fa-dribbble"></span>
+						</a>
+						<a
+							href="javascript:;"
+							target="_blank"
+							class="text-secondary me-xl-4 me-4"
+						>
+							<span class="text-lg fab fa-twitter"></span>
+						</a>
+						<a
+							href="javascript:;"
+							target="_blank"
+							class="text-secondary me-xl-4 me-4"
+						>
+							<span class="text-lg fab fa-instagram"></span>
+						</a>
+						<a
+							href="javascript:;"
+							target="_blank"
+							class="text-secondary me-xl-4 me-4"
+						>
+							<span class="text-lg fab fa-pinterest"></span>
+						</a>
+						<a
+							href="javascript:;"
+							target="_blank"
+							class="text-secondary me-xl-4 me-4"
+						>
+							<span class="text-lg fab fa-github"></span>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-8 mx-auto text-center mt-1">
+						<p class="mb-0 text-secondary">
+							Copyright ©
+							<script>
+								document.write(new Date().getFullYear());
+							</script>
+							Soft by NextGen.
+						</p>
+					</div>
 				</div>
 			</div>
-		</div>
+		</footer>
+		<!-- -------- END FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
+		<!--   Core JS Files   -->
+		<script src="../assets/js/core/popper.min.js"></script>
+		<script src="../assets/js/core/bootstrap.min.js"></script>
+		<script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+		<script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+		<script>
+			var win = navigator.platform.indexOf('Win') > -1;
+			if (win && document.querySelector('#sidenav-scrollbar')) {
+				var options = {
+					damping: '0.5',
+				};
+				Scrollbar.init(
+					document.querySelector('#sidenav-scrollbar'),
+					options,
+				);
+			}
+		</script>
+
+		<!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+		<script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.7"></script>
 	</body>
 </html>
